@@ -14,6 +14,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to listen on port 9000: %v", err)
 	}
+	log.Println("Server successfully started. Listening on port 9000")
 
 	grpcServer := grpc.NewServer()
 	todo.RegisterTodoServiceServer(grpcServer, &methods.Server{})
