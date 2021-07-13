@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package todo;
+
+option go_package = "example.com/GDForge/todo";
+
+message Card {
+    int32 id = 1;
+    string description = 2;
+    bool done = 3;
+}
+
+message AllCards {
+    repeated Card cards = 1;
+}
+
+service TodoService {
+    rpc NewCard(Card) returns(Card) {};
+    rpc GetAllCards(Card) returns(AllCards) {};
+    rpc RemoveCard(Card) returns(Card) {};
+    rpc MarkCardAsDone(Card) returns(Card) {};
+}
