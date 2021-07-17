@@ -1,7 +1,5 @@
 # GDForge_todo
-
-Задание на позицию стажер-разработчик Go     
-       
+ 
 Задание по GoLang:     
 Го Тур: https://tour.golang.org/welcome/1      
 +: https://golang.org/doc/effective_go     
